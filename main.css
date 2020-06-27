@@ -3,22 +3,16 @@
   margin: 0px;
   padding: 0px;
   max-width: 100%;
-  
 }
 
 .home-row{
   margin: 0px;
   padding: 0px;
-  
-  
 }
 
 .home-col3{
   margin: 0px;
   padding: 0px;
-  
-  
-  
 }
 
 
@@ -35,8 +29,249 @@
   
 }
 
+@media (min-width: 768px){
+  .home-col3{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    border-right: 1px solid #e6ecf0;
+
+  }
+
+  .nav{
+    position: absolute;
+    width:65%;
+    right: 0;
+    display: table;
+    overflow:auto;
+
+    
+  }
+
+  .fa-fw{
+    position: relative;
+    font-size:25px;
+    padding-top:1px ;
+    border-radius: 50px;
+  }
+
+  .fa-home{
+    color: #00acee;
+  }
+
+  .fa-twitter{
+    margin-top: 4px;
+    color: #00acee
+  }
+
+  .homebtn{
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: max-content;
+    padding-top: 1px;
+    padding-bottom: 37px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 100px;
+    margin-top: 2px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    transition: 0.15s;
+  }
+
+  .otherbtn {
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1d2125;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-size: 17px;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    width: max-content;
+    padding-top: 8px;
+    padding-bottom: 37px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 100px;
+    margin-bottom: 3px;
+    transition: 0.15s;
+
+  }
+  .homebtn:hover{
+    background-color: #e8f5fe;
+    color: #00acee;
+    text-decoration: none;
+  }
+
+  .otherbtn:hover{
+    background-color: #e8f5fe;
+    color: #00acee;
+    text-decoration: none;
+  }
+
+  .tweetbutn {
+    border-radius: 100px;
+    background-color: #00acee;
+    color: #FFFFFF;
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-size: 15px;
+    padding: 12px;
+    position: relative;
+    text-size-adjust: 100%;
+    overflow-wrap: break-word;
+    cursor: pointer;
+    margin-top: 0px;
+  }
+
+  .tweetbutn:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .hidden_l{
+    display: none;
+  }
+
+  .profile{
+    border-radius: 100px;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1d2125;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    display: table;
+    height: 30px;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 100px;
+    margin-bottom: 3px;
+    transition: 0.15s;
+    margin-top: 100px;
+    
+  }
+
+  .profile:hover{
+    background-color: #e8f5fe;
+    text-decoration: none;
+    color:#1d2125;
+  }
+  .name{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1d2125;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-size: 14px;
+    display: table-cell;
+  }
+  .username{
+    color: gray;
+    font-weight: 300;
+    display: table-cell;
+    float: right;
+  }
+
+  .dp{
+    /* margin-top: 100px; */
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+
+  .home-col5{
+    margin-left: 25%;
+    padding: 0px;
+    border-right: 1px solid #e6ecf0;
+    
+  }
+
+  .tweet_col-5{
+    margin-top: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 10px solid #e6ecf0; 
+  }
+  .top_portion{
+    position: -webkit-sticky;
+    position: sticky;  
+    top: 0; /* required */
+    background-color: #FFFFFF;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 800;
+    font-stretch: 50%;
+    font-size: 19px;
+    padding-top: 12px;
+    padding-left: 0px;
+    padding-right: 16px;
+    height: 55px;
+    border-bottom: .5px solid #e6ecf0;
+  }
+  .tweet_col-5under{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .dp{
+    padding-top: -30px;
+    max-width: 52px;
+    max-height: 52px;
+  }
+
+  #pic{
+    margin-top: 5px;
+    margin-bottom: -5px;
+    border: .5px solid #a7b1b9;
+    border-radius: 15px;
+  }
+
+  #tweetdp{
+    width: 49px
+  }
+
+  .tweetbox{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1d2125;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    width: 470px;
+    overflow: auto;
+  }
+
+
+
+
+
+
+
+
+    
+  .home-col4{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+    
+}
+
+
+
+
 
 @media (min-width: 375px) and (max-width: 767px){
+
+  .home-col3 {
+    height: 8%;
+  } 
 
   .nav{
     position: fixed;
@@ -47,9 +282,6 @@
     
   }
 
-  .home-col3 {
-    height: 8%;
-  } 
   
   .fa-fw{
     position: relative;
@@ -84,6 +316,10 @@
     font-size: 0px;
     
   }
+  .hidden{
+    margin-left: 0;
+    display: none;
+  }
 
   .home-col5{
     height: 92%;
@@ -105,7 +341,6 @@
     padding-right: 16px;
     height: 55px;
     border-bottom: .5px solid #e6ecf0;
-
   }
   .homeboxbtn{
     float:right;

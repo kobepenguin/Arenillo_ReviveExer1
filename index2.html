@@ -9,28 +9,57 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity= "sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
     
-
-
 </head>
+
 <body style="height:100%">
     <div class="container home-container" style="height:100%">
         <div class="row home-row" style="height:100%">
             <div class="col-lg-3 col-md-1 col-sm-1 home-col3 order-sm-1 order-2">
+               
                 <nav class="nav">
-                    <a class="otherbtn" href=""><i class="fa fa-home fa-fw" ></i>&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
-                    <a class="otherbtn" href=""><i class="fas fa-search fa-fw" ></i>&nbsp;&nbsp;Search&nbsp;&nbsp;</a>
+                    <a class="homebtn hidden" href="#"><i class="fab fa-twitter fa-fw" ></i></a>
+                    <a class="otherbtn" style="color: #00acee" href=""><i class="fa fa-home fa-fw" ></i>&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden" href="#"><i class="fas fa-hashtag fa-fw"></i>&nbsp;&nbsp;Explore&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden_l" href=""><i class="fas fa-search fa-fw" ></i>&nbsp;&nbsp;Search&nbsp;&nbsp;</a>
                     <a class="otherbtn" href=""><i class="far fa-bell fa-fw" ></i>&nbsp;&nbsp;Notifications&nbsp;&nbsp;</a>
                     <a class="otherbtn" href=""><i class="far fa-envelope fa-fw"></i>&nbsp;&nbsp;Messages&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden" href="#"><i class="far fa-bookmark fa-fw" ></i>&nbsp;&nbsp;Bookmarks&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden" href="#"><i class="far fa-list-alt fa-fw" ></i>&nbsp;&nbsp;Lists&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden" href="#"><i class="far fa-user fa-fw" ></i>&nbsp;&nbsp;Profile&nbsp;&nbsp;</a>
+                    <a class="otherbtn hidden" href="#"><i class="fas fa-ellipsis-h fa-fw" ></i>&nbsp;&nbsp;More&nbsp;&nbsp;</a>
+    
+                    <a class="tweetbutn hidden" href="#"><i style="font-size:25px;color:#1d2125"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tweet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+                    <a class="profile hidden" href="#"><img class= "dp" src="dp.png"><span class="name">&nbsp;&nbsp;mark</span><i class="fas fa-lock fa-fw" style="font-size: 14px;" ></i><span class="username">@krammerchino</span></a>
+
                 </nav>
             </div>
 
             <div class="col-lg-5 col-md-7 col-sm-8 home-col5 order-1">
+                
 
                 <div class="top_portion">
-                        <img class= "dp" src="dp.png">
+                        <img class= "dp hidden_l" src="dp.png">
                         <a class="home_mid" href="" style="color: #1d2125;">&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
                         <a class="homeboxbtn" href=""><i class="far fa-star" style="font-size:25px;color:#00acee"></i></a>
                         
+                </div>
+
+                <div class = "tweet_col-5 hidden">
+                    <div class= "tweet_col-5under">
+                    <form>
+                        <img class= "dp" src="dp.png">
+                        <input type="text" class="tweetbox" id="tweetarea" placeholder="What's Happening?">
+                        <p class="tweetbtnrow">
+                        <a class="tweetboxbtn" href=""><i class="far fa-image" style="font-size:22px;color:#00acee"></i></a>
+                        <a class="tweetboxbtn" href=""><i class="fas fa-running" style="font-size:22px;color:#00acee"></i></a>
+                        <a class="tweetboxbtn" href=""><i class="fas fa-chart-bar" style="font-size:22px;color:#00acee"></i></a>
+                        <a class="tweetboxbtn" href=""><i class="far fa-smile" style="font-size:22px;color:#00acee"></i></a>
+                        <a class="tweetboxbtn" href=""><i class="far fa-calendar-alt" style="font-size:22px;color:#00acee"></i></a>
+                        <a class="tweetbtnbox" href=""><i style="font-size:25px;color:#1d2125"></i>&nbsp;&nbsp;&nbsp;Tweet&nbsp;&nbsp;&nbsp;</a>
+                    </p>
+                      <!-- <Button>Tweet</Button> -->
+                    </form>
                 </div>
                 
                 <div class="center_portion">
@@ -51,9 +80,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
 
@@ -71,9 +100,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
                     <section class="tweet">
@@ -93,9 +122,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
 
@@ -116,9 +145,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
 
@@ -138,9 +167,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
 
@@ -160,9 +189,9 @@
                                 <a class="tweetbtn" href="" ><i class="far fa-comment" style="font-size:17px;color:#8997a2" ></i></a>
                                 <a class="tweetbtn" href=""><i class="fas fa-retweet"  style="font-size:17px;color:#8997a2"></i></a>
                                 <a class="tweetbtn" href=""><i class="far fa-heart"  style="font-size:17px;color:#8997a2"></i></a>
-                            </p>
                             
-                        </p>
+                            
+                        
                          
                     </section>
                        
