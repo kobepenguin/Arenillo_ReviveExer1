@@ -197,8 +197,6 @@
 
   .tweet_col-5{
     margin-top: -20px;
-    margin-left: -15px;
-    margin-right: -15px;
     border-bottom: 10px solid #e6ecf0; 
   }
   .top_portion{
@@ -216,8 +214,11 @@
     height: 55px;
     border-bottom: .5px solid #e6ecf0;
   }
+
+
   .tweet_col-5under{
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 18px;
     margin-right: 15px;
   }
   .dp{
@@ -247,11 +248,104 @@
     overflow: auto;
   }
 
+  .tweetboxbtn{
+    margin-left: 10px;
+  }
+  .tweetbtnrow{
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  a.tweetbtnbox{
+    margin-top: -10px;
+    padding-top: -10px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .tweetbtnbox{
+    border-radius: 100px;
+    background-color: #00acee;
+    color: #FFFFFF;
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-stretch: 100%;
+    font-size: 15px;
+    
+    float: right;
+  }
 
+  .center_portion{
+    max-height: 92%;
+    border-bottom: .5px solid #e6ecf0;
+   
+  }
 
+  .tweet{
+   
+    border-bottom: .5px solid #e6ecf0;
+    padding-top: 6px;
+    
+  }
 
+  section{
+    display: grid;
+    grid: auto/ 40px;
+    grid-gap: 0 2em;
+    padding-right: 17px;
+    
+  }
 
+  section p {
+    grid-column: 2 / 3;
+    margin-bottom:5px ;
+  }
 
+  .tweetdp_sec{
+    padding-left: 15px;
+    grid-column: 1/2;
+    align-self: start;
+  }
+  .fa-chevron-down{
+    margin-top: -14px;
+    float: right;
+  }
+
+  #pic{
+    margin-top: 5px;
+    margin-bottom: -5px;
+    border: .5px solid #a7b1b9;
+    border-radius: 15px;
+  }
+
+  #tweetdp{
+    width: 49px
+  }
+  .like{
+    width: 100%;
+    height: 2%; 
+    display: flex;
+    padding-top: 10px;
+  }
+  .tweetbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: right;
+    flex-grow: 1;
+    font-size: 5px;
+    
+  }
+  
+  .name{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 650;
+    font-stretch: 50%;
+    font-size: 17px;
+  }
+  .username{
+
+  }
 
 
     
