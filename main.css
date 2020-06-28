@@ -37,7 +37,7 @@
     height: 100%;
     z-index: 1;
     border-right: 1px solid #e6ecf0;
-
+    overflow: auto;
   }
 
   .nav{
@@ -46,8 +46,6 @@
     right: 0;
     display: table;
     overflow:auto;
-
-    
   }
 
   .fa-fw{
@@ -58,12 +56,12 @@
   }
 
   .fa-home{
-    color: #00acee;
+    color: #1da1f2;
   }
 
   .fa-twitter{
     margin-top: 4px;
-    color: #00acee
+    color: #1da1f2;
   }
 
   .homebtn{
@@ -103,19 +101,19 @@
   }
   .homebtn:hover{
     background-color: #e8f5fe;
-    color: #00acee;
+    color: #1da1f2;
     text-decoration: none;
   }
 
   .otherbtn:hover{
     background-color: #e8f5fe;
-    color: #00acee;
+    color: #1da1f2;
     text-decoration: none;
   }
 
   .tweetbutn {
     border-radius: 100px;
-    background-color: #00acee;
+    background-color: #1da1f2;
     color: #FFFFFF;
     text-align: center;
     font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -193,6 +191,7 @@
     padding: 0px;
     border-right: 1px solid #e6ecf0;
     
+    
   }
 
   .tweet_col-5{
@@ -214,7 +213,19 @@
     height: 55px;
     border-bottom: .5px solid #e6ecf0;
   }
-
+  .home_mid:hover{
+    text-decoration: none;
+  }
+.fa-star{
+  padding: 5px;
+  border-radius: 700px;
+  float: right;
+}
+.fa-star:hover{
+  background-color: #e8f5fe;
+  color: #1da1f2;
+  text-decoration: none;
+}
 
   .tweet_col-5under{
     margin-top: 30px;
@@ -249,22 +260,32 @@
   }
 
   .tweetboxbtn{
-    margin-left: 10px;
+    padding: 5px;
+  border-radius: 700px;
+    margin-left: 4px;
   }
   .tweetbtnrow{
     margin-top: 10px;
     margin-left: 50px;
   }
+
+  .tweetboxbtn:hover{
+    background-color: #e8f5fe;
+  color: #1da1f2;
+  text-decoration: none;
+  }
   a.tweetbtnbox{
-    margin-top: -10px;
-    padding-top: -10px;
+    margin-top: -9px;
     padding-bottom: 5px;
     padding-right: 5px;
     padding-left: 5px;
+    height: 40px;
+    line-height: 31px;
+    
   }
   .tweetbtnbox{
     border-radius: 100px;
-    background-color: #00acee;
+    background-color: #1da1f2;
     color: #FFFFFF;
     text-align: center;
     font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
@@ -273,6 +294,11 @@
     font-size: 15px;
     
     float: right;
+  }
+
+  .tweetbtnbox:hover{
+    color: white;
+    text-decoration: none;
   }
 
   .center_portion{
@@ -343,16 +369,194 @@
     font-stretch: 50%;
     font-size: 17px;
   }
-  .username{
-
-  }
-
-
     
   .home-col4{
     margin: 0px;
     padding: 0px;
+    position: relative;
+    right: 0;
+    height: 100%;
+    
+    border-right: 1px solid #e6ecf0;
+    
   }
+
+  .rightarea{
+    position: absolute;
+    width:80%;
+    height: 100%;
+    margin-left: 45px;
+    margin-right: 45px;
+    display: table;
+    overflow:auto;
+    overflow-y: unset;
+    
+  }
+
+  .search-box {
+    padding-left: 2.375rem;
+    border-radius: 500px;
+    background-color: #e6ecf0;
+    border: none;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .fa-search{
+    position: absolute;
+    top: 21px;
+    left: 13px;
+  }
+  .search-box:focus{
+    background-color: white;
+    border: .5px solid #1da1f2;
+    box-shadow: none;
+    color: #1da1f2;
+  }
+
+  .trends{
+    border-radius: 15px;
+    background-color: #f5f8fa;
+    width: 100%;
+    margin-top: 15px;
+    height: 675px;
+  }
+
+  .phtrends{
+    border-bottom: .1px solid #e6ecf0;
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 1000;
+    font-stretch: 1000%;
+    font-size:19px;
+    height: 45px;
+    text-align: start;
+    padding-top: 9px;
+    padding-left: 16px;
+    margin-bottom: 0px;
+  }
+  .fa-cog{
+    color: #1da1f2;
+    float: right;
+    margin-top: -32px;
+    margin-right:15px ;
+  }
+
+  .trending{
+    margin-top: 0px;
+    height: 65px;
+    padding-top: 7px;
+    border-bottom: .1px solid #e6ecf0;
+  }
+  .trend{
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #667887;
+    font-weight: 400;
+    font-stretch: 1000%;
+    font-size:13px;
+    
+    text-align: start;
+    padding-top: 0;
+    padding-left: 16px;
+  }
+  .show{
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1da1f2;
+    font-weight: 400;
+    font-stretch: 1000%;
+    font-size:15px;
+    
+    text-align: start;
+    padding-top: 0;
+    padding-left: 16px;
+  }
+
+  .showmore{
+    margin-top: 0px;
+    height: 65px;
+    padding-top: 7px;
+  }
+  .topic{
+    color: #000000;
+    font-weight: 700;
+    font-stretch: 1000%;
+    font-size:15px;
+    padding-left: 16px;
+  }
+
+ 
+  .whotofollow{
+    border-radius: 15px;
+    background-color: #f5f8fa;
+    width: 100%;
+    margin-top: 15px;
+    height: 300px;
+    
+  }
+
+  .follow{
+    text-align: left;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-stretch: 1000%;
+    font-size:13px;
+    border-bottom: .1px solid #e6ecf0;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+  }
+  
+  .followname{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-stretch: 1000%;
+    font-size:15px;
+    width: auto;
+    margin-top: 2px;
+    
+    position: absolute;
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .followname2{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #667887;
+    font-weight: 400;
+    font-stretch: 1000%;
+    font-size:15px;
+    width: auto;
+    padding-left: 10px;
+    position: absolute;
+    display: inline-block;
+    padding-top: 21px;
+  }
+
+  .followbut{
+    border-radius: 100px;
+    background-color: #f5f8fa;
+    border: .5px solid #1da1f2;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    color: #1da1f2;
+    font-weight: 700;
+    font-stretch: 1000%;
+    font-size:15px;
+    text-align: center;
+   line-height: 26px;
+    position: absolute;
+    margin-top: 6px;
+    right: 15px;
+    width: 80px;
+    height: 30px;
+    mar
+
+  }
+  
+  
   
     
 }
@@ -391,7 +595,7 @@
     height: 30px;
     width: 30px;
     transition: 0.1s;
-    color: #00acee;
+    color: #1da1f2;
     text-decoration: none;
   }
 
@@ -526,7 +730,7 @@
     right: 5%;
     float: inline-end;
     
-    background-color: #00acee;
+    background-color: #1da1f2;
     color:#FFF;
     border-radius:50px;
     text-align:center;
